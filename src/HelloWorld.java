@@ -14,5 +14,6 @@ public class HelloWorld {
         int y = 5;
         System.out.println(++y);
         System.out.println(y);
+        int class;
     }
 }
