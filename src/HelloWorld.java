@@ -4,8 +4,7 @@ public class HelloWorld {
         System.out.print("\n");
         int myFavoriteNumber = 78;
         System.out.println(myFavoriteNumber);
-        String myString = "this is my string";
-        myString += 'c';
+        double myString = 3.14159;
         System.out.println(myString);
 
 
