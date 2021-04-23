@@ -6,7 +6,7 @@ public class HelloWorld {
         System.out.println(myFavoriteNumber);
         double myString = 3.14159;
         System.out.println(myString);
-        long myNumber = 3.14;
+        long myNumber = 123L;
         System.out.println(myNumber);
     }
 }
