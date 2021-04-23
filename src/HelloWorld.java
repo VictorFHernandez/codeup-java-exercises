@@ -17,7 +17,22 @@ public class HelloWorld {
 //        String theNumberThree = "three";
 //        Object o = theNumberThree;
 //        int three = (int) o;
-        int three = (int) "three";
+//        int three = (int) "three";
+        int x = 4;
+        x = x + 5;
+        System.out.println(x);
+
+        int a = 3;
+        int b = 4;
+        b = b * a;
+        System.out.println(b);
+
+        int m = 10;
+        int n = 2;
+        m = m / n;
+        n = n - m;
+        System.out.println(m);
+        System.out.println(n);
 
     }
 }
