@@ -28,5 +28,14 @@ public class ControlFlowExercises {
         }while(maxNum > minNum);
         */
 
+        long startingNumber = 2;
+        long leMillion = 1000000;
+        do{
+            System.out.println(startingNumber);
+            startingNumber *= startingNumber;
+        }while (startingNumber < leMillion);
+
+
+
     }
 }
