@@ -67,5 +67,15 @@ public class ControlFlowExercises {
                 System.out.println(m);
             }
         }
+
+//        exercise 3:
+
+
+
+
+
+
+
+
     }
 }
