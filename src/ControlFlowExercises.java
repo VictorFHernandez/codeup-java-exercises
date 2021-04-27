@@ -78,18 +78,22 @@ public class ControlFlowExercises {
         String userInput = "yes";
 
         while(userInput.equalsIgnoreCase("yes")){
-            System.out.println("Please enter a Number");
+            System.out.println("enter a Number... if you dare");
             int input = scan.nextInt();
 
-            System.out.println("Number | Square | Cubed");
-            System.out.println("_______________________");
+            System.out.println("|   Number   |   Square   |   Cubed   |");
+            System.out.println("|------------|------------|-----------|");
 
             for(int a = 1; a <= input; a++){
-                System.out.println(a + "      | " + (a * a) + "      | " + (a * a * a));
+                System.out.println("| " + a + "          | " + (a * a) + "          | " + (a * a * a) + "         |");
             }
             System.out.println("Would you like to continue? YES or NO");
             userInput = scan.next();
         }
+
+//        exercise 4:
+
+
 
 
 
