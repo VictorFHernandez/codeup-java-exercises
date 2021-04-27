@@ -93,15 +93,32 @@ public class ControlFlowExercises {
 
 //        exercise 4:
 
-
-
-
-
-
-
-
-
-
-
+        System.out.println("Your mission if you choose to accept it is to enter your grade. | YES/NO |");
+        String studentInput = scan.next();
+        while(studentInput.equalsIgnoreCase("yes")){
+            System.out.println("Test your might by entering your numerical grade (1 - 100)");
+            int studentGrade = scan.nextInt();
+            if(studentGrade == 100){
+                System.out.println("A+ Flawless Victory");
+            }else if(studentGrade >= 90){
+                System.out.println("A");
+            }else if(studentGrade >= 88){
+                System.out.println("B+");
+            }else if(studentGrade >= 80){
+                System.out.println("B");
+            }else if(studentGrade >= 78){
+                System.out.println("C+");
+            }else if(studentGrade >= 70){
+                System.out.println("C");
+            }else if(studentGrade >= 68){
+                System.out.println("D+");
+            }else if(studentGrade >= 60){
+                System.out.println("D");
+            }else {
+                System.out.println("F  Fatality");
+            }
+            System.out.println("Continue?  | YES/NO |");
+            studentInput = scan.next();
+        }
     }
 }
