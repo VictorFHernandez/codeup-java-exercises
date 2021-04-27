@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MethodsExercises {
 //    exercise 1:
 
@@ -7,6 +9,7 @@ public class MethodsExercises {
         System.out.println(Multiplication(2,2));
         System.out.println(Division(8,2));
         System.out.println(Modulus(100,8));
+        System.out.println();
     }
     public static int Addition(int numberOne, int numberTwo){
         return numberOne + numberTwo;
@@ -24,12 +27,16 @@ public class MethodsExercises {
         return numberOne % numberTwo;
     }
 
+//    exercise 2:
 
+    Scanner scan = new Scanner(System.in);
 
-
-
-
-
-
+    public static void Verification(int number){
+        if(number >= 1 && number <= 10){
+            System.out.println("all good");
+        }else {
+            System.out.println("Invalid Number... please follow the rules");
+        }
+    }
 
 }
