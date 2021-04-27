@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
@@ -69,6 +71,26 @@ public class ControlFlowExercises {
         }
 
 //        exercise 3:
+
+
+        Scanner scan = new Scanner(System.in);
+
+        String userInput = "yes";
+
+        while(userInput.equalsIgnoreCase("yes")){
+            System.out.println("Please enter a Number");
+            int input = scan.nextInt();
+
+            System.out.println("Number | Square | Cubed");
+            System.out.println("_______________________");
+
+            for(int a = 1; a <= input; a++){
+                System.out.println(a + "      | " + (a * a) + "      | " + (a * a * a));
+            }
+            System.out.println("Would you like to continue? YES or NO");
+            userInput = scan.next();
+        }
+
 
 
 
