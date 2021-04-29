@@ -48,7 +48,6 @@ public class MethodsExercises {
 
     public static void factorial(int userNumber){
 
-
     }
 
 
