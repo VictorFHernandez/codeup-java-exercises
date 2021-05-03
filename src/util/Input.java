@@ -28,5 +28,7 @@ public class Input {
     String input = scanner.nextLine();
     return input.equalsIgnoreCase("yes") || input.equalsIgnoreCase("no");
     }
+
+
 }
 
