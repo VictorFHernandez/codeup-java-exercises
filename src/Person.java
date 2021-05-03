@@ -9,20 +9,26 @@ public class Person {
         System.out.println(jim.getName());
         jim.setName("Dwight");
         jim.sayHello();
+
         /*
         Person person1 = new Person("John");
         Person person2 = new Person("John");
          System.out.println(person1.getName().equals(person2.getName()));
         System.out.println(person1 == person2);
+        Comments:
         the first line came back true because it used the .equals
-        and the second one came back false because it used the double equals sign(==) */
-       /*
+        and the second one came back false because it used the double equals sign(==)
+
+        ********************************************************************************
+
         Person person1 = new Person("John");
         Person person2 = person1;
         System.out.println(person1 == person2);
+        Comments:
         the code above came back as true
-        */
-        /*
+
+        ********************************************************************************
+
         Person person1 = new Person("John");
         Person person2 = person1;
         System.out.println(person1.getName());
@@ -30,6 +36,7 @@ public class Person {
         person2.setName("Jane");
         System.out.println(person1.getName());
         System.out.println(person2.getName());
+        Comments:
         the output was as expected, it printed out John the first two times then it changed the name to jane and printed out the name jane twice at the end
          */
     }
