@@ -22,6 +22,16 @@ public class Person {
         System.out.println(person1 == person2);
         the code above came back as true
         */
+        /*
+        Person person1 = new Person("John");
+        Person person2 = person1;
+        System.out.println(person1.getName());
+        System.out.println(person2.getName());
+        person2.setName("Jane");
+        System.out.println(person1.getName());
+        System.out.println(person2.getName());
+        the output was as expected, it printed out John the first two times then it changed the name to jane and printed out the name jane twice at the end
+         */
     }
 
     public String getName(){
