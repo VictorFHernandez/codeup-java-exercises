@@ -9,6 +9,12 @@ public class Person {
         System.out.println(jim.getName());
         jim.setName("Dwight");
         jim.sayHello();
+        Person person1 = new Person("John");
+        Person person2 = new Person("John");
+        /* System.out.println(person1.getName().equals(person2.getName()));
+        System.out.println(person1 == person2);
+        the first line came back true because it used the .equals
+        and the second one came back false because it used the double equals sign(==) */
     }
 
     public String getName(){
@@ -26,6 +32,5 @@ public class Person {
 //TODO: print a message to the console using the person's name
         System.out.println(name + " Says Hello");
     }
-
 
 }
