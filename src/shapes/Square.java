@@ -1,7 +1,7 @@
 package shapes;
 
 public class Square extends Rectangle {
-    private int side;
+    protected int side;
     public Square(int side){
         super(side, side);
         this.side = side;
