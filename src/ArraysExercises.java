@@ -10,8 +10,6 @@ public class ArraysExercises {
         String[] Person = {"Tony", "Steve", "Bruce"};
         for (String Avenger : Person) {
             System.out.println(Avenger);
-            //need to work on second part:
-
         }
     }
 }
