@@ -1,20 +1,17 @@
 package shapes;
 
 public class Rectangle {
-    private int length(int input){
-        return input;
-    }
+    protected int lenght;
+    protected int width;
 
-    private int width(int input){
-        return input;
+    public Rectangle(int lenght, int width){
+        this.lenght = lenght;
+        this.width = width;
     }
-
     public int getArea(){
-        return length(5) * width(4);
+        return lenght * width;
     }
-
     public int getPerimeter(){
-        return (2 * length(5) + (2 * width(4)));
+        return (2 * lenght) + (2 * width);
     }
-
 }
