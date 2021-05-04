@@ -10,6 +10,6 @@ public class ServerNameGenerator {
         System.out.println(randomAdjetive + "-" + randomNouns);
     }
     public static void main(String[] args){
-        randomGenerator();
+        randomGenerator();//called it
     }
 }
