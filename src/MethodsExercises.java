@@ -10,7 +10,10 @@ public class MethodsExercises {
         System.out.println(Division(8, 2));
         System.out.println(Modulus(100, 8));
         System.out.println("Enter a number between 1 - 10");
-        getInteger(11);
+        Scanner scan = new Scanner(System.in);
+        int userInput = scan.nextInt();
+        getInteger(userInput, userInput);
+
     }
 
     public static int Addition(int numberOne, int numberTwo) {
@@ -35,11 +38,11 @@ public class MethodsExercises {
 
 //    exercise 2:
 
-    Scanner scan = new Scanner(System.in);
-    public static void getInteger(int userInput) {
-        while (userInput >= 1 && userInput <= 10) {
+
+    public static void getInteger(int min, int max) {
+        if(min >= 1 && max <= 10) {
             System.out.println("Thank you! valid number confirmed");
-        } if(!(userInput >= 1 && userInput <= 10)) {
+        } else {
             System.out.println("Invalid Number... please follow the rules or else...");
         }
     }
