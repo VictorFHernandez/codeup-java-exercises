@@ -13,7 +13,9 @@ public class MethodsExercises {
         Scanner scan = new Scanner(System.in);
         int userInput = scan.nextInt();
         getInteger(userInput, userInput);
-
+        System.out.println("Enter a number between 1 - 10");
+        int userInt = scan.nextInt();
+        factorial(userInt);
     }
 
     public static int Addition(int numberOne, int numberTwo) {
@@ -49,11 +51,10 @@ public class MethodsExercises {
 
 //    exercise 3:
 
-    public static void factorial(int userNumber){
-
+    public static int factorial(int userNumber) {
+        for (int i = 0; i < userNumber; i++) {
+            return userNumber * userNumber++;
+        }
+        return userNumber;
     }
-
-
-
-
 }
