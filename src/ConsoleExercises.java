@@ -39,9 +39,5 @@ public class ConsoleExercises {
         System.out.printf("the area is: %d\n", area);
         System.out.printf("the perimeter is: %d\n", perimeter);
 
-
-
-
-
     }
 }
