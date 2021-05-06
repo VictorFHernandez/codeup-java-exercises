@@ -1,7 +1,9 @@
-import java.util.Scanner;
-interface waterBottle {
+package practice;
+
+interface waterBottlePractice {
 
     String color = "green";
+    String volume = 750 + " ML";
     public void fillup();
     public void pourOut();
 }
@@ -9,18 +11,19 @@ interface waterBottle {
 
 
 
-public class practice implements waterBottle{
+public class practice implements waterBottlePractice{
 
     public static void main(String[] args){
         System.out.println("Hey! lets get it started");
         System.out.println();
         randomNumber();
         System.out.println("having fun? | yes or no |");
-        Scanner scan = new Scanner(System.in);
-        String input = scan.next();
-        System.out.print("you've entered " + input);
+//        Scanner scan = new Scanner(System.in);
+//        String input = scan.next();
+//        System.out.print("you've entered " + input);
         System.out.println();
-        System.out.println(color);
+        System.out.println("The water bottle color is: " + color);
+        System.out.println("The volume of the water bottle is: " + volume);
         practice water = new practice();
         water.fillup();
         practice pour = new practice();

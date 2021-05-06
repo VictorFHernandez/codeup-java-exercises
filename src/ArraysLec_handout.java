@@ -79,7 +79,7 @@ public class ArraysLec_handout {
             System.out.println("Codeup runs a few cohorts at a time - one of the ones from 2021 is " + cohort);
         }
 
-        //TODO: Using the array you set up above, practice iterating through the array using both of our types of for loops. When might you choose to use one over the other?
+        //TODO: Using the array you set up above, practice.practice iterating through the array using both of our types of for loops. When might you choose to use one over the other?
 
         for(int i = 0; i < Tekken.length; i++){
             System.out.println("Some characters in Tekken are " + Tekken[i]);
