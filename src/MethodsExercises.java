@@ -21,25 +21,20 @@ public class MethodsExercises {
     public static int Addition(int numberOne, int numberTwo) {
         return numberOne + numberTwo;
     }
-
     public static int Subtraction(int numberOne, int numberTwo) {
         return numberOne - numberTwo;
     }
-
     public static int Multiplication(int numberOne, int numberTwo) {
         return numberOne * numberTwo;
     }
-
     public static int Division(int numberOne, int numberTwo) {
         return numberOne / numberTwo;
     }
-
     public static int Modulus(int numberOne, int numberTwo) {
         return numberOne % numberTwo;
     }
 
 //    exercise 2:
-
 
     public static void getInteger(int min, int max) {
         if(min >= 1 && max <= 10) {
@@ -51,10 +46,22 @@ public class MethodsExercises {
 
 //    exercise 3:
 
-    public static int factorial(int userNumber) {
-        for (int i = 0; i < userNumber; i++) {
-            return userNumber * userNumber++;
+    public static void factorial(long input) {
+        long factorialNum = 1;
+        if(!(input <= 1 || input >= 10)){
+            for (long i = 1; i <= input; i++){
+                factorialNum *= i;
+            }
+        }else {
+            System.out.println("Invalid Number");
+
         }
-        return userNumber;
+        System.out.println("The factorial number of " + input + " is: " + factorialNum);
     }
+
+//    exercise 4:
+
+
+
+//    exercise 5:
 }
