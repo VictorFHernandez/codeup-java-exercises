@@ -29,7 +29,7 @@ public class Input {
         if(min >= 1 && max <= 10) {
             System.out.println("Thank you! valid number confirmed");
         }
-           return min;
+           return min;//
     }
 
 
