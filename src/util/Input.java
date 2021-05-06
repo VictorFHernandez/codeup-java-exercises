@@ -6,12 +6,6 @@ public class Input {
 
     Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args){
-    Input input = new Input();
-    System.out.println(input.getSting());
-    System.out.println(input.yesNo());
-}
-
     String getSting(){
     System.out.println("please enter a word");
     String input = scanner.nextLine();
@@ -27,6 +21,15 @@ public class Input {
     System.out.println("enter yes or no");
     String input = scanner.nextLine();
     return input.equalsIgnoreCase("yes") || input.equalsIgnoreCase("no");
+    }
+
+    int getInteger(int min, int max) {
+        int invalid = 0;
+        System.out.println("enter a number between 1 - 10");
+        if(min >= 1 && max <= 10) {
+            System.out.println("Thank you! valid number confirmed");
+        }
+           return min;
     }
 
 
