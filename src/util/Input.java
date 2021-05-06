@@ -7,7 +7,7 @@ public class Input {
     Scanner scanner = new Scanner(System.in);
 
     String getSting(){
-    System.out.println("please enter a word");
+    System.out.println("please enter a String");
     String input = scanner.nextLine();
     if(!input.equals("")){
         return input + " is a string";
@@ -20,16 +20,22 @@ public class Input {
     boolean yesNo(){
     System.out.println("enter yes or no");
     String input = scanner.nextLine();
-    return input.equalsIgnoreCase("yes") || input.equalsIgnoreCase("no");
+    return input.equalsIgnoreCase("yes");
     }
 
     int getInteger(int min, int max) {
-        int invalid = 0;
-        System.out.println("enter a number between 1 - 10");
         if(min >= 1 && max <= 10) {
             System.out.println("Thank you! valid number confirmed");
+        }else {
+            System.out.println("Invalid Number");
         }
-           return min;//
+           return min;
+    }
+
+    int getInt(){
+        System.out.println("enter a number");
+
+        return scanner.nextInt();
     }
 
 

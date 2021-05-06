@@ -13,9 +13,15 @@ public class MethodsExercises {
         Scanner scan = new Scanner(System.in);
         int userInput = scan.nextInt();
         getInteger(userInput, userInput);
+        System.out.println();
         System.out.println("Enter a number between 1 - 10");
         int userInt = scan.nextInt();
         factorial(userInt);
+        System.out.println();
+        System.out.println("Press Enter to roll the dice");
+        scan.nextLine();
+
+
     }
 
     public static int Addition(int numberOne, int numberTwo) {
@@ -60,6 +66,11 @@ public class MethodsExercises {
     }
 
 //    exercise 4:
+
+//    public static int DiceRoll(int dice1, int dice2){
+//        double diceRoll = Math.ceil(Math.random() * 6);
+//        System.out.println("Your Dice Number is: " + diceRoll);
+//    }
 
 
 

@@ -8,7 +8,10 @@ public class InputTest {
         Input input = new Input();
         System.out.println(input.getSting());
         System.out.println(input.yesNo());
+        System.out.println("eneter a number beetween 1 - 10");
         int userInput = scanner.nextInt();
         System.out.println(input.getInteger(userInput, userInput));
+
+
     }
 }
