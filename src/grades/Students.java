@@ -8,7 +8,7 @@ public class Students {
 
     public Students(String studentsname){
         this.Studentsname = studentsname;
-        this.grades = new ArrayList<Integer>();
+        this.grades = new ArrayList<>();
     }
 
 
@@ -36,27 +36,6 @@ public class Students {
         Kim.addGrade(84);
         Kim.addGrade(88);
         Kim.getGradeAverage();
-        System.out.println();
-        Students John = new Students("John");
-        John.addGrade(64);
-        John.addGrade(71);
-        John.addGrade(26);
-        John.addGrade(55);
-        John.getGradeAverage();
-        System.out.println();
-        Students Ben = new Students("Ben");
-        Ben.addGrade(99);
-        Ben.addGrade(86);
-        Ben.addGrade(93);
-        Ben.addGrade(70);
-        Ben.getGradeAverage();
-        System.out.println();
-        Students Peter = new Students("Peter");
-        Peter.addGrade(99);
-        Peter.addGrade(100);
-        Peter.addGrade(96);
-        Peter.addGrade(98);
-        Peter.getGradeAverage();
         System.out.println();
     }
 }
