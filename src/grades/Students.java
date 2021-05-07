@@ -26,16 +26,15 @@ public class Students {
             totalGrades += grade;
         }
         double averageGrade = totalGrades / grades.size();
-        System.out.println("The grade average for " + this.getName() + " is: " + averageGrade);
         return averageGrade;
     }
     public static void main(String[] args){
+
         Students Kim = new Students("Kim");
         Kim.addGrade(91);
         Kim.addGrade(99);
         Kim.addGrade(84);
         Kim.addGrade(88);
-        Kim.getGradeAverage();
-        System.out.println();
+        System.out.println("The grade average for " + Kim.getName() + " is: " + Kim.getGradeAverage());
     }
 }
