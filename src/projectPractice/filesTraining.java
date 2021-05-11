@@ -1,42 +1,50 @@
 package projectPractice;
 
+import util.Input;
+
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
-public class filesTraining {
+public class filesTraining extends methods implements contactInterface{
 
     public static void main(String[] args) throws IOException {
-        String directory = "./src/projectPractice/TxtFiles";
-        String mainMenu = "mainMenu.txt";
+        boolean exit;
+        Scanner scan = new Scanner(System.in);
 
+        do {
+            mainMenu();
+            System.out.println("Enter an option (1, 2, 3, 4 or 5):");
+            int userInput = scan.nextInt();
 
-        Path DataDirectory = Paths.get(directory);
-        Path DataMainMenu = Paths.get(directory, mainMenu);
-
-        if (Files.notExists(DataDirectory)) {
-            Files.createDirectories(DataDirectory);
-        }
-
-        if (! Files.exists(DataMainMenu)) {
-            Files.createFile(DataMainMenu);
-        }
-
-        Path menuTxtPath = Paths.get(directory, mainMenu);
-
-        List<String> MainMenu = Arrays.asList(
-                "View contacts.",
-                "Add a new contact.",
-                "Search a contact by name.",
-                "Delete an existing contact.",
-                "Exit."
-        );
-
-        Files.write(menuTxtPath, MainMenu);
-
-
+            if (userInput == 1) {
+                contactsList();
+                System.out.println();
+            } else if (userInput == 2) {
+                addContact();
+                System.out.println();
+            } else if (userInput == 3) {
+                searchContactName();
+                System.out.println();
+            } else if (userInput == 4) {
+                deleteContact();
+                System.out.println();
+            } else if (userInput == 5) {
+                System.out.println("Thank you! have a nice day");
+            } else {
+                System.out.println();
+                mainMenu();
+            }
+            if(userInput == 5){
+                exit = false;
+            }else{
+                exit = true;
+            }
+        }while (exit);
     }
 }

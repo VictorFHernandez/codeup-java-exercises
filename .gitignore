@@ -4,6 +4,7 @@
 # IntelliJ
 .idea/*
 *.iml
+src/projectPractice
 
 # Compiled output
 *.class
